@@ -11,7 +11,6 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 
 @SpringBootApplication
-@Import(DataSourceConfig.class)
 public class SpringBootProjectApplication {
 
 	public static void main(String[] args) {

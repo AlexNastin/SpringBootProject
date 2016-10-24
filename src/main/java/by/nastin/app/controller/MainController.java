@@ -14,10 +14,11 @@ import java.util.List;
 public class MainController {
 
     @Autowired
+    @Qualifier("employeeRepository")
     private EmployeeRepository employeeRepository;
 
-    @RequestMapping(path = "/getEmployee",  method = RequestMethod.GET)
-    public List<Employee> getEmployees(){
-    return  employeeRepository.findAll();
+    @RequestMapping(path = "/getEmployee", method = RequestMethod.GET)
+    public List<Employee> getEmployees() {
+        return employeeRepository.findAll();
     }
 }

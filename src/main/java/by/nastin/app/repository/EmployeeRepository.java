@@ -1,14 +1,12 @@
 package by.nastin.app.repository;
 
 import by.nastin.app.entity.Employee;
-import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Repository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
-import java.util.Set;
 
-public interface EmployeeRepository extends CrudRepository<Employee, Integer> {
+
+public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
 
     @Override
     List<Employee> findAll();
